@@ -1,0 +1,22 @@
+\documentclass{report}
+\input{structure.tex}
+\begin{document}
+
+\title{Example Report}
+\author{Example Mc'Exampleface}
+\date{\today}
+
+\maketitle{}
+
+\tableofcontents{}
+
+\chapter{Example Chapter}
+\input{pages/example.tex}
+
+\chapter{Refrences}
+ {
+  \renewcommand{\chapter}[2]{}
+  \bibliography{sources}
+ }
+
+\end{document}
