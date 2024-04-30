@@ -21,7 +21,7 @@ The template is made to be used with the DevContainer, to do so, open the projec
 
 You can add new libraries in two ways:
 
-### Manually (One-Time)
+#### Manually (One-Time)
 
 When inside the devcontainer, open the terminal and run the following command:
 
@@ -29,7 +29,7 @@ When inside the devcontainer, open the terminal and run the following command:
 tlmgr install <package>
 ```
 
-### Automatically (Every Time)
+#### Automatically (Every Time)
 
 First, navigate to [devcontainer.json](.devcontainer/devcontainer.json) and add the following line to the `postCreateCommand` array:
 
