@@ -17,9 +17,9 @@ _My personal LateX report template_
 
 The template is made to be used with the DevContainer, to do so, open the project in Visual Studio Code and click the "Reopen in Container" button that appears in the bottom right corner of the window.
 
-## Adding new libraries
+## Adding new packages
 
-You can add new libraries in two ways:
+You can add new packages in two ways:
 
 #### Manually (One-Time)
 
@@ -34,14 +34,23 @@ tlmgr install <package>
 First, navigate to [devcontainer.json](.devcontainer/devcontainer.json) and add the following line to the `postCreateCommand` array:
 
 ```json
-"tlmgr install <package>"
+tlmgr install <package>
 ```
 
 Note that by default, the template installs `tex-gyre` so, you should be able to install any other package by just including it after it. For example:
 
 ```json
-"tlmgr install tex-gyre <package>"
+tlmgr install tex-gyre <package>
 ```
+
+## Structure
+
+The template is slightly opinionated, but you can change it to fit your needs. In general:
+
+* [structure.text](./structure.tex) contains any packages and config.
+* [report.tex](./report.tex) is the main file.
+* [pages](./pages/) contains the different sections of the report.
+* [docs](./docs/) contains the output.
 
 ## Acknowledgements
 
