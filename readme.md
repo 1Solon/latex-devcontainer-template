@@ -34,13 +34,13 @@ tlmgr install <package>
 First, navigate to [devcontainer.json](.devcontainer/devcontainer.json) and add the following line to the `postCreateCommand` array:
 
 ```json
-tlmgr install <package>
+"tlmgr install <package>"
 ```
 
 Note that by default, the template installs `tex-gyre` so, you should be able to install any other package by just including it after it. For example:
 
 ```json
-tlmgr install tex-gyre <package>
+"tlmgr install tex-gyre <package>"
 ```
 
 ## Structure
